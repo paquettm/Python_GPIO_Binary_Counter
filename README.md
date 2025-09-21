@@ -1,4 +1,4 @@
-# Intro to Python in Context: Variables, Function, Classes, Objects, Lists, Libraries, GPIO
+# Intro to Python in Context - Variables, Function, Classes, Objects, Lists, Libraries, GPIO
 
 You have learned and observed a few things about Python up until now.
 Today, you will be challenged and not be given so many instructions.
