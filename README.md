@@ -1,4 +1,4 @@
-# In-Class Assignment 1: Example Python Program that does Weird Stuff
+# Intro to Python in Context: Variables, Function, Classes, Objects, Lists, Libraries, GPIO
 
 You have learned and observed a few things about Python up until now.
 Today, you will be challenged and not be given so many instructions.
@@ -42,6 +42,8 @@ You may need to
 
 # Part 2: LED binary counter
 
+Recall you are still using your Raspberry Pi for this lab.
+
 A binary counter displays a decimal number by showing its value as a sequence of bits (0s and 1s), where each bit represents a power of two and their sum equals the original decimal number.
 
 ## Binary Counter Basics
@@ -64,5 +66,44 @@ So when a 9 would become the number 10, we say it overflows, and we have to incr
 
 In summary, a binary counter’s series of bits must be converted by evaluating their weighted sum to display the decimal equivalent.
 
-## Task 1:
-Wire up your raspberry Pi GPIO to create a 3-bit binary display.
+## Task 1: Build the circuit
+
+Turn off your Raspberry pi before making any connection to the Raspberry Pi.
+
+Connect RPi GPIO to a few discrete components to create a 3-bit binary display. In other words, connect 3 LEDs and resistors to different control pins on the RPi.
+The build should contain a breadboard, 3 LEDs, 3 resistors (current-limiting), and wires.
+
+You may need to find information about the Raspberry Pi GPIO header pinout.
+
+Wire things up while the RPi is powered off.
+
+## Task 2: Learn abou the GPIO
+
+Open the file `LED_Display.py`.
+Read the code and attempt to interpret it.
+
+**Important note: Raspberry Pi 4 requires de library `RPi.GPIO` whereas Raspberry Pi 5 requires the library `rpi-lgpio`.**
+
+Install the libraries in the virtual environment to make the code runnable.
+
+Run the code.
+
+Associate each action that you observe to the lines in the code.
+
+Are the LEDs lighting up? If not, do the connections correspond to the LOGICAL pin numbering in the GPIO pinout? Are your circuits complete? Are the LEDs wired the correctly?
+
+## Task 3: Modify `main.py`
+
+Add the necessary code to configure the GPIO for your circuit in the `main.py` file.
+
+Add a function to display small numbers on your LEDS to the `main.py` file.
+
+Add instructions to display the object count on the binary LED display.
+
+Verify that your code is running as intended. If not, debug.
+
+Repeat until the program is running as intended.
+
+Part 3: Reflection log
+
+Update your reflection log and discuss today's activity.
