@@ -26,6 +26,8 @@ You may need to
 - install packages with pip
 - etc.
 
+**TIP: The text-to-speech does not work on Raspberry Pi without many modifications. You must delete it from the code.**
+
 ## Task 2: Analyse the Code and its Functionality
 
 - Read the code
